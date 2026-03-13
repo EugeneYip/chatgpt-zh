@@ -97,17 +97,17 @@ const LEVELS = [
 ];
 
 const CORE_FEATURES = [
-  { title: "搜尋", ico: "globe", color: "#0284c7", description: "即時網頁結果，可查詢最新事實、價格、新聞、法規，以及任何會變動的資訊。", when: "凡是可能在模型訓練截止後發生變化的內容。" },
-  { title: "深度研究", ico: "search", color: "#4f46e5", description: "跨網頁來源、檔案與已連接應用程式進行多步驟、有文件依據的研究。", when: "你需要的是帶來源的報告，而不是快速答案。" },
-  { title: "專案", ico: "folderOpen", color: "#059669", description: "可持續使用的工作空間，包含共享檔案、自訂指示與對話記憶。", when: "任何你會反覆回來處理的工作：課程、客戶、創業專案。" },
-  { title: "記憶", ico: "database", color: "#d97706", description: "在不同對話間儲存持久偏好與重複出現的背景資訊。", when: "適合偏好與習慣，不是精確文件儲存。" },
+  { title: "搜尋", ico: "globe", color: "#0284c7", description: "即時網頁結果，可查詢最新資訊、價格、新聞、法規，以及其他會變動的內容。", when: "凡是可能在模型訓練截止後發生變化的內容。" },
+  { title: "深度研究", ico: "search", color: "#4f46e5", description: "可跨網頁來源、檔案與已連接應用程式進行多步驟、附資料依據的研究。", when: "你需要的是附來源的報告，而不是快速答案。" },
+  { title: "專案", ico: "folderOpen", color: "#059669", description: "可長期使用的工作空間，包含共享檔案、自訂指示與對話記憶。", when: "任何你會反覆回來處理的工作：課程、客戶、創業專案。" },
+  { title: "記憶", ico: "database", color: "#d97706", description: "在不同對話間儲存長期偏好與經常出現的背景資訊。", when: "適合偏好與習慣，不是精確文件儲存。" },
   { title: "自訂指示", ico: "settingsGear", color: "#57534e", description: "持續生效的行為規則，用來設定語氣、格式與回應結構。", when: "你希望所有對話都預設遵循你的規則。" },
-  { title: "Canvas", ico: "panelsTopLeft", color: "#334155", description: "可見的寫作與程式編輯介面，支援精準的行內修改。", when: "需要反覆編修長文或程式碼時。" },
-  { title: "任務", ico: "clock", color: "#7c3aed", description: "排程稍後執行的輸出，並通知你結果。", when: "提醒、每日簡報、定期摘要。" },
+  { title: "Canvas", ico: "panelsTopLeft", color: "#334155", description: "可見的寫作與程式編輯介面，支援精準的局部修改。", when: "需要反覆編修長文或程式碼時。" },
+  { title: "任務", ico: "clock", color: "#7c3aed", description: "排程稍後執行的工作，完成後通知你結果。", when: "提醒、每日簡報、定期摘要。" },
   { title: "應用程式（連接器）", ico: "wrench", color: "#0d9488", description: "連接外部工具，讓 ChatGPT 能讀取並操作你的資料。", when: "最佳上下文存在於聊天之外時。" },
   { title: "Agent", ico: "workflow", color: "#16a34a", description: "可跨瀏覽器、檔案、程式碼與已連接應用程式自主執行。", when: "需要跨網站與多步驟行動的任務。" },
   { title: "自訂 GPT", ico: "bot", color: "#44403c", description: "具穩定指示與知識檔案的可重複使用助手。", when: "某個工作流程重複到值得制度化時。" },
-  { title: "語音", ico: "mic", color: "#e11d48", description: "以口說互動進行低摩擦思考與探索。", when: "想一邊說一邊想，或需要多工處理時。" },
+  { title: "語音", ico: "mic", color: "#e11d48", description: "以口說互動進行低負擔的思考與探索。", when: "想一邊說一邊想，或需要多工處理時。" },
   { title: "圖片", ico: "imagePlus", color: "#c026d3", description: "可上傳分析、依描述生成，並直接進行編修。", when: "需要視覺理解、創作或精修時。" },
   { title: "檔案與資料", ico: "fileText", color: "#0891b2", description: "上傳 PDF、試算表與文件，結合程式執行進行分析。", when: "圖表、摘要、計算。" },
   { title: "模型", ico: "brain", color: "#65a30d", description: "可選擇偏重速度、平衡，或深度推理的模式。", when: "依任務複雜度匹配所需能力。" },
@@ -120,8 +120,8 @@ const ADDITIONAL_FEATURES = [
   { title: "分享連結", ico: "link2", color: "#57534e", description: "透過網址分享一段對話。" },
   { title: "圖片編修", ico: "camera", color: "#c026d3", description: "選取並微調已生成圖片的區域。" },
   { title: "互動式表格", ico: "table2", color: "#0891b2", description: "在分析前先以視覺方式檢視上傳資料。" },
-  { title: "技能", ico: "share2", color: "#0d9488", description: "將重複工作流程做成可重用機制，保持一致性。" },
-  { title: "Pulse", ico: "sparkles", color: "#4f46e5", description: "非同步研究，並帶回視覺化摘要。" },
+  { title: "技能", ico: "share2", color: "#0d9488", description: "將重複工作流程做成可重複使用的機制，維持一致性。" },
+  { title: "Pulse", ico: "sparkles", color: "#4f46e5", description: "非同步研究，並整理回傳視覺化摘要。" },
 ];
 
 const TOOL_CHOOSER = [
@@ -146,12 +146,12 @@ const PROMPT_BLOCKS = [
 
 const GUIDE_SECTIONS = [
   { id:"mental-model", level:"foundation", number:"01", title:"先建立正確的心智模型", ico:"brain", color:"#65a30d",
-    summary:"把 ChatGPT 當成推理夥伴，而不是神諭。它的第一個回答是有用草稿，不是最終真相。任何輸出都應在檢視後，才視為暫時成立。",
+    summary:"把 ChatGPT 當成推理夥伴，而不是神諭。它的第一個回答通常只是可用草稿，不是最終答案。任何輸出都應先檢查，再暫時採信。",
     whyItMatters:"多數失望來自錯誤期待。你應期待高品質初稿，而不是絕對確定。",
     beginnerMoves:["先假設第一個答案只是草稿，並批判性閱讀。","追問它做了哪些假設。","用 ChatGPT 加速判斷，而不是取代判斷。"],
     advancedMoves:["要求它提出最強反方論點。","把探索、建議與風險審查拆成不同輪次。","在高影響決策上，把它當成第二意見。"],
     commonMistakes:["未經驗證就相信數字。","把沉默誤解成自信。","直接逐字照抄輸出。"],
-    promptExamples:[{prompt:"你做了哪些假設？",why:"可揭露隱藏推理。"},{prompt:"懷疑型專家最可能挑戰什麼？",why:"進行對抗式自我審查。"},{prompt:"對你建議最強的反對論點是什麼？",why:"避免確認偏誤。"},{prompt:"請把每個主張的信心評分 1 到 5。",why:"把事實與推測分開。"}],
+    promptExamples:[{prompt:"你做了哪些假設？",why:"可揭露隱藏推理。"},{prompt:"懷疑型專家最可能挑戰甚麼？",why:"進行對抗式自我審查。"},{prompt:"對你建議最強的反對論點是甚麼？",why:"避免確認偏誤。"},{prompt:"請把每個主張的信心評分 1 到 5。",why:"把事實與推測分開。"}],
     beforeAfter:{before:"幫我寫一份咖啡店商業計畫。",after:"請為波士頓市中心的精品咖啡店起草一頁式商業計畫。目標客群是研究生與遠端工作者。凡屬估算而非有來源支持的內容請標示。",improvement:"加入背景、受眾、地點與驗證規則。"},
     visual:"mental" },
   { id:"workspace", level:"foundation", number:"02", title:"先懂工作空間，再去鑽研提示詞", ico:"laptop", color:"#059669",
@@ -166,10 +166,10 @@ const GUIDE_SECTIONS = [
   { id:"prompting", level:"foundation", number:"03", title:"提示設計：清楚比花俏更重要", ico:"penTool", color:"#0284c7",
     summary:"好的提示是操作簡報。華麗措辭可有可無，但明確限制不可少。模型看不到你腦中的標準，除非你寫出來。",
     whyItMatters:"模糊提示只會得到泛泛而談的輸出。大多數挫折都來自輸入規格不足。",
-    beginnerMoves:["明確寫出受眾與使用情境。","說清楚成功長什麼樣子。","指定格式、語氣、長度，以及應避免事項。"],
+    beginnerMoves:["明確寫出受眾與使用情境。","說清楚你要的成果長甚麼樣子。","指定格式、語氣、長度，以及應避免事項。"],
     advancedMoves:["先要大綱，核准後再寫全文。","把事實與詮釋分開。","提供一套自我評分標準。"],
     commonMistakes:["用三個字的提示卻期待客製化結果。","一次塞進太多限制。","用「你可以嗎…？」代替直接指令。"],
-    promptExamples:[{prompt:"目標：__。背景：__。限制：__。請產出：__。",why:"通用骨架。"},{prompt:"先給我大綱，先不要開始寫全文。",why:"避免後續重寫整體結構。"},{prompt:"在寫之前，先告訴我你還需要知道什麼。",why:"讓模型先提出釐清問題。"},{prompt:"請以 [角色] 的角度向 [受眾] 說明。",why:"固定語氣與深度。"}],
+    promptExamples:[{prompt:"目標：__。背景：__。限制：__。請產出：__。",why:"通用骨架。"},{prompt:"先給我大綱，先不要開始寫全文。",why:"避免後續重寫整體結構。"},{prompt:"在寫之前，先告訴我你還需要知道甚麼。",why:"讓模型先提出釐清問題。"},{prompt:"請以 [角色] 的角度向 [受眾] 說明。",why:"固定語氣與深度。"}],
     beforeAfter:{before:"幫我寫求職信。",after:"請為 McKinsey 的 Strategy Analyst 職位寫求職信。背景：國際管理研究生，具 SOP 與 CRM 經驗。語氣自信但不傲慢。350 字。不要出現 'I am passionate about.'",improvement:"角色、背景、語氣、長度與負面限制都更明確。"},
     visual:"prompt" },
   { id:"revision", level:"core", number:"04", title:"修訂流程比一次到位更重要", ico:"refreshCcw", color:"#7c3aed",
@@ -178,30 +178,30 @@ const GUIDE_SECTIONS = [
     beginnerMoves:["草稿完成後先問：『哪裡薄弱或遺漏？』","用更窄的目標進行修訂。","除非方向根本錯誤，否則不要重開。"],
     advancedMoves:["固定分輪：結構、準確性、語氣、壓縮、包裝。","先自我批判，再改寫。","明確指定壓縮比例。"],
     commonMistakes:["不讓模型先自我診斷，就自己一直重寫。","回饋太空泛，例如『幫我改好一點』。","修訂輪次太多且沒有焦點。"],
-    promptExamples:[{prompt:"你的回答為什麼沒有達到目標？",why:"先自我診斷再修訂。"},{prompt:"邏輯要更銳利，但保留原結構。",why:"限制修訂範圍。"},{prompt:"在不失去核心內容下壓縮 35%。",why:"強迫排序重點。"},{prompt:"依這些標準評分。哪些地方低於 4/5？",why:"結構化自我評估。"}],
+    promptExamples:[{prompt:"你的回答為甚麼沒有達到目標？",why:"先自我診斷再修訂。"},{prompt:"邏輯要更銳利，但保留原結構。",why:"限制修訂範圍。"},{prompt:"在不失去核心內容下壓縮 35%。",why:"強迫排序重點。"},{prompt:"依這些標準評分。哪些地方低於 4/5？",why:"結構化自我評估。"}],
     beforeAfter:{before:"這樣不對，再試一次。",after:"第 2 段論證有循環問題。請改寫，並加入上傳報告中的一個數據點，其餘部分保留。",improvement:"明確指出錯誤、修正方向與保留部分。"},
     visual:"workflow" },
   { id:"writing", level:"core", number:"05", title:"寫作、改寫與轉化", ico:"fileText", color:"#57534e",
-    summary:"ChatGPT 特別擅長做轉化：替不同受眾改寫、調整語氣、摘要、重組。很多時候，改進既有文字比從零開始更強。",
+    summary:"ChatGPT 特別擅長做轉化：替不同受眾改寫、調整語氣、摘要、重組。很多時候，修改現成文字比從零起草更有效。",
     whyItMatters:"多數專業寫作其實都是轉化工作。這正是 AI 回報率最高的地方。",
     beginnerMoves:["貼上原文，說清楚哪些要保留、哪些要改。","指定受眾、媒介與語氣。","語氣不確定時，要求多個版本。"],
     advancedMoves:["對照式版本：正式、精簡、說服型。","逐句診斷。","保留事實前提下做風格轉換。"],
     commonMistakes:["明明已有筆記，卻還從零開始寫。","只看第一個語氣版本，不比較替代案。","沒說清楚哪些內容必須保留。"],
-    promptExamples:[{prompt:"改寫成寄給教授的 email：尊重、直接、不要廢話。",why:"精準轉化。"},{prompt:"請給我三個版本：正式、精簡、說服型。",why:"透過對照選擇最佳版本。"},{prompt:"哪些句子太空泛？為什麼？",why:"逐句診斷。"},{prompt:"保留事實與結構，只改語氣。",why:"限制修改範圍。"}],
+    promptExamples:[{prompt:"改寫成寄給教授的 email：尊重、直接、不要廢話。",why:"精準轉化。"},{prompt:"請給我三個版本：正式、精簡、說服型。",why:"透過對照選擇最佳版本。"},{prompt:"哪些句子太空泛？為甚麼？",why:"逐句診斷。"},{prompt:"保留事實與結構，只改語氣。",why:"限制修改範圍。"}],
     beforeAfter:{before:"幫我把這封 email 改好。",after:"改寫成寄給系主任的版本。語氣尊重、直接。移除術語。150 字內。保留行動項目。",improvement:"受眾、語氣、反模式、長度與保留條件都更清楚。"},
     visual:"writing" },
   { id:"files-data", level:"core", number:"06", title:"檔案、PDF、試算表與資料", ico:"table2", color:"#0891b2",
     summary:"ChatGPT 可以檢視檔案、摘要文件、對資料執行程式並生成圖表。關鍵順序是：先描述，再分析，最後下結論。",
     whyItMatters:"先檢查資料再解讀，可避免最常見的錯誤。",
-    beginnerMoves:["先問檔案裡有什麼，再問它代表什麼。","先要求欄位審核。","PDF 要分開看結構、論點與證據。"],
+    beginnerMoves:["先問檔案裡有甚麼，再問它代表甚麼。","先要求欄位審核。","PDF 要分開看結構、論點與證據。"],
     advancedMoves:["要求列出完整假設軌跡。","在下結論前，先重述抽取出的表格。","大型資料集用程式執行。"],
-    commonMistakes:["一開始就問『有什麼重點洞察？』","沒有驗證就相信圖表標籤。","假設 PDF 解析一定完美。"],
+    commonMistakes:["一開始就問『有甚麼重點洞察？』","沒有驗證就相信圖表標籤。","假設 PDF 解析一定完美。"],
     promptExamples:[{prompt:"先描述：欄位、日期範圍、缺失值，以及可做的分析選項。",why:"先審核再分析。"},{prompt:"先抽出核心論點，再開始批判。",why:"先理解再判斷。"},{prompt:"請列出這張圖用到的所有假設。",why:"建立可稽核軌跡。"},{prompt:"請寫 Python 清理這份資料，執行後顯示結果。",why:"可重現的分析。"}],
-    beforeAfter:{before:"這份試算表有什麼重點？",after:"先做審核：欄位、型別、日期範圍、缺失值。提出三種最有用的分析，依實用性排序。在我核准前先不要執行。",improvement:"先檢查、再提案、再等待核准。"},
+    beforeAfter:{before:"這份試算表有甚麼重點？",after:"先做審核：欄位、型別、日期範圍、缺失值。提出三種最有用的分析，依實用性排序。在我核准前先不要執行。",improvement:"先檢查、再提案、再等待核准。"},
     visual:"data" },
   { id:"search-research", level:"core", number:"07", title:"搜尋、深度研究與引用", ico:"search", color:"#4f46e5",
-    summary:"搜尋適合查當前答案並附來源。深度研究適合多步驟報告。凡是最新、受管制或快速變動的內容，都不應只依賴靜態記憶。",
-    whyItMatters:"沒有搜尋時，ChatGPT 的回答來自一個凍結快照。",
+    summary:"搜尋適合查最新資訊，並附上來源。深度研究適合多步驟報告。凡是最新、受管制或快速變動的內容，都不應只依賴靜態記憶。",
+    whyItMatters:"沒有搜尋時，ChatGPT 的回答其實來自固定時間點的知識快照。",
     beginnerMoves:["凡是可能變動的內容都先搜尋。","檢查引用來源是否真的支持對應主張。","高風險議題優先使用第一手來源。"],
     advancedMoves:["要求『把確認事實與你的推論分開』。","指定來源類型、地區與日期範圍。","深度研究前先定義範圍。"],
     commonMistakes:["拿模型內建知識回答當前事件。","看到『有來源』就直接相信，卻不點進去。","簡單事實問題也用深度研究。"],
@@ -210,8 +210,8 @@ const GUIDE_SECTIONS = [
     visual:"research" },
   { id:"multimodal", level:"core", number:"08", title:"語音、圖片與多模態工作流程", ico:"imagePlus", color:"#c026d3",
     summary:"語音、圖片理解、生成與編修都已是標準能力。關鍵仍是具體：模糊的視覺要求只會得到泛化結果。",
-    whyItMatters:"多模態讓 ChatGPT 同時成為視覺分析工具、圖片工作室與免手動腦力夥伴。",
-    beginnerMoves:["上傳圖片時要明確說要它做什麼。","速度比修飾重要時可用語音。","圖片生成要指定主體、構圖、氛圍與風格。"],
+    whyItMatters:"多模態讓 ChatGPT 同時成為視覺分析工具、圖片工作區與免手操作的思考助手。",
+    beginnerMoves:["上傳圖片時要明確說要它做甚麼。","速度比修飾重要時可用語音。","圖片生成要指定主體、構圖、氛圍與風格。"],
     advancedMoves:["串接模式：先分析、再解釋、再整理成筆記。","用圖片批判做設計審查。","局部編修時，要指明區域與變更內容。"],
     commonMistakes:["上傳圖片卻不給任何指示。","用模糊描述卻期待擬真效果。","忘記語音也沿用同一份上下文。"],
     promptExamples:[{prompt:"請擷取這份菜單內容，並按分類整理。",why:"具體抽取任務。"},{prompt:"請用 120 字向非技術主管解釋這張圖。",why:"有條件的分析。"},{prompt:"生成：9:16 直式、電影感、黃金時刻。",why:"攝影式規格描述。"},{prompt:"把背景改成純白攝影棚，主體保留。",why:"局部且具體的編修。"}],
@@ -226,12 +226,12 @@ const GUIDE_SECTIONS = [
     promptExamples:[{prompt:"不要直接告訴我答案，請先考我。",why:"更符合教學邏輯。"},{prompt:"把這段錄音整理成行動項目與後續跟進草稿。",why:"一份輸入，多份輸出。"},{prompt:"把這個工作流程轉成一個技能。",why:"把流程制度化。"}],
     beforeAfter:{before:"解釋一下光合作用。",after:"我在準備生物考試。先不要解釋。請從簡單到進階提問，檢查我的理解，並在我答錯時簡短糾正。",improvement:"從給答案變成引導式學習。"},
     visual:"collab" },
-  { id:"personalization", level:"power", number:"10", title:"記憶、指示、人格、臨時聊天", ico:"database", color:"#d97706",
-    summary:"記憶用來存背景。指示用來定規則。人格用來調整風格。臨時聊天則是乾淨房。這些並不能互相替代。",
+  { id:"personalization", level:"power", number:"10", title:"記憶、指示、回應風格、臨時聊天", ico:"database", color:"#d97706",
+    summary:"記憶用來存背景。指示用來定規則。回應風格用來調整質感。臨時聊天則是乾淨房。這些不能互相取代。",
     whyItMatters:"個人化設定若配置錯誤，傷害結果的程度往往大於幫助。",
     beginnerMoves:["記憶：放穩定且廣泛的偏好。","指示：放全域寫作規則。","臨時聊天：完全不承接。"],
-    advancedMoves:["人格只應調整質感，不應取代指示。","專案專屬規則優先於全域設定。","定期檢查記憶內容。"],
-    commonMistakes:["什麼都塞進記憶，而不是放進指示。","記憶累積過時內容。","想用人格改能力，而不是改風格。"],
+    advancedMoves:["回應風格只應調整質感，不應取代指示。","專案專屬規則優先於全域設定。","定期檢查記憶內容。"],
+    commonMistakes:["甚麼都塞進記憶，而不是放進指示。","記憶累積過時內容。","想用回應風格改能力，而不是改風格。"],
     promptExamples:[{prompt:"你目前記得我哪些事情？",why:"用於檢查記憶。"},{prompt:"請忘記我偏好正式語氣這件事。",why:"定向清理。"},{prompt:"請用空白模式，不要帶入任何既有偏好。",why:"乾淨起點模式。"}],
     beforeAfter:{before:"偏好都放進記憶裡，但結果還是很不一致。",after:"行為規則放進指示。事實背景放進記憶。領域規則放進專案指示。",improvement:"把不同資訊放到正確層。"},
     visual:"memory" },
@@ -240,16 +240,16 @@ const GUIDE_SECTIONS = [
     whyItMatters:"對多階段工作而言，專案是槓桿最高的組織工具。",
     beginnerMoves:["每個工作流一個專案，名稱要清楚。","只上傳相關檔案。","寫好專案指示。"],
     advancedMoves:["把對話摘要也加入作為來源檔案。","每週工作放進同一個專案，不要一直開新聊天。","建立一個個人生產力的 meta-project。"],
-    commonMistakes:["專案切得太碎太窄。","什麼都上傳，造成上下文膨脹。","沒有專案指示。"],
+    commonMistakes:["專案切得太碎太窄。","甚麼都上傳，造成上下文膨脹。","沒有專案指示。"],
     promptExamples:[{prompt:"幫我規劃這學期最理想的專案結構。",why:"先設計工作空間。"},{prompt:"請依照我先前的內容風格起草一份 memo。",why:"利用累積上下文。"},{prompt:"整理過去五段對話的關鍵決策。",why:"形成活的摘要。"}],
     beforeAfter:{before:"檔案散得到處都是，一直搞不清楚。",after:"每個領域一個專案。放入參考資料。寫明指示。持續回來使用。定期摘要。",improvement:"把分散對話變成有結構的工作流。"},
     visual:"project" },
-  { id:"gpts", level:"power", number:"12", title:"什麼時候該建立 GPT（以及什麼時候不該）", ico:"bot", color:"#44403c",
+  { id:"gpts", level:"power", number:"12", title:"甚麼時候該建立 GPT（以及甚麼時候不該）", ico:"bot", color:"#44403c",
     summary:"只有在流程會重複、指示穩定，而且值得重用時才真正有用。但多數人太早開始做 GPT。",
     whyItMatters:"太早做 GPT，等於把尚未成熟的流程提前固化。時機正確時，它才會變成一鍵工具。",
     beginnerMoves:["先保存提示詞：提示本身就是原型。","重複三次後再正式化。","目的要窄，一次只做一件事。"],
     advancedMoves:["四層結構：角色、指示、知識、工具。","明寫失敗規則。","做對抗式測試。"],
-    commonMistakes:["只做過一次的事就建 GPT。","範圍太大：『什麼都做』。","沒有知識檔案。"],
+    commonMistakes:["只做過一次的事就建 GPT。","範圍太大：『甚麼都做』。","沒有知識檔案。"],
     promptExamples:[{prompt:"把我們目前的流程整理成 GPT 藍圖。",why:"從實際經驗抽出規格。"},{prompt:"請列出指示、輸入/輸出結構與失敗規則。",why:"形成完整規格。"},{prompt:"這個 GPT 應該處理哪些邊界情況？",why:"測試韌性。"}],
     beforeAfter:{before:"做一個幫我處理所有 email 的 GPT。",after:"做一個專門回覆教授 email 的 GPT。語氣尊重、直接。150 字內。先問背景後再起草。未確認前拒絕直接寄出。上傳：風格指南。",improvement:"範圍更窄，並加入安全規則與參考依據。"},
     visual:"gpt" },
@@ -263,9 +263,9 @@ const GUIDE_SECTIONS = [
     beforeAfter:{before:"幫我重寫這篇文章。[2000 字貼在聊天中]",after:"請在 Canvas 打開。先不要修改。先標記強弱段落，之後我再指示你改哪裡。",improvement:"先檢視、再修改。"},
     visual:"canvas" },
   { id:"tasks-apps-agent", level:"expert", number:"14", title:"任務、應用程式、Pulse 與 Agent", ico:"workflow", color:"#16a34a",
-    summary:"這是操作層。任務負責稍後執行。應用程式帶入資料。Pulse 做非同步研究。Agent 則負責自主多步驟工作。",
+    summary:"這一層是執行層。任務負責稍後執行。應用程式帶入資料。Pulse 做非同步研究。Agent 則負責自主多步驟工作。",
     whyItMatters:"大多數人只用即時問答。這一層才真正把 ChatGPT 變成會替你做事的系統。",
-    beginnerMoves:["任務：提醒、簡報、定期摘要。","應用程式：當資訊在 Drive、Slack、email 等外部系統。","Agent：適合人工做要 15 分鐘以上的多步驟流程。"],
+    beginnerMoves:["任務：提醒、簡報、定期摘要。","應用程式：當資訊在 Drive、Slack、email 等外部系統。","Agent：適合原本需要手動花 15 分鐘以上的多步驟流程。"],
     advancedMoves:["把 Agent 提示寫成工作簡報，附上停點。","用 Pulse 做主動追蹤更新。","任務 + 專案 用來做每週自動摘要。"],
     commonMistakes:["不知道 Agent 已經存在。","Agent 指示模糊，沒有停下規則。","把任務只當提醒工具。"],
     promptExamples:[{prompt:"建立每日任務：早上 8 點簡報 [主題]，列前三點。",why:"主動式簡報。"},{prompt:"請結合已連接來源與公開來源做競品分析。",why:"整合內外部資料。"},{prompt:"Agent：照這些步驟執行，提交前先暫停。",why:"自主執行但保留檢查點。"}],
@@ -309,7 +309,7 @@ function SectionVisual({ type }) {
     research: <svg viewBox="0 0 360 140" className={cls} style={{ color: col }}><circle cx="66" cy="58" r="32" className={s} strokeWidth="2"/><path d="M90 82l22 22" className={s} strokeWidth="2"/><rect x="170" y="10" width="144" height="28" rx="8" className={s} strokeWidth="2"/><rect x="170" y="50" width="144" height="28" rx="8" className={s} strokeWidth="2"/><rect x="170" y="90" width="144" height="28" rx="8" className={s} strokeWidth="2"/>{tx(242,29,"第一手",{bold:true})}{tx(242,69,"第二手",{bold:true})}{tx(242,109,"推論",{bold:true})}<circle cx="326" cy="24" r="4" fill="#10a37f" stroke="none"/><circle cx="326" cy="64" r="4" fill="#F59E0B" stroke="none"/><circle cx="326" cy="104" r="4" fill="#E11D48" stroke="none" opacity="0.5"/></svg>,
     multimodal: <svg viewBox="0 0 360 130" className={cls} style={{ color: col }}>{[["36","文字"],["120","圖片"],["204","語音"],["288","編修"]].map(([x,l])=><g key={l}><rect x={x} y="20" width="52" height="52" rx="12" className={s} strokeWidth="2"/>{tx(Number(x)+26,50,l,{bold:true,size:9})}</g>)}<path d="M88 46h32M172 46h32M256 46h32" className={s} strokeWidth="1.5"/>{tx(180,102,"把不同模式串在一起",{dim:true,size:9})}</svg>,
     collab: <svg viewBox="0 0 360 140" className={cls} style={{ color: col }}>{[["18","24","64","42","錄音"],["100","6","120","42","學習"],["100","78","120","42","群組"],["238","24","80","42","分享"]].map(([x,y,w,h,l])=><g key={l}><rect x={x} y={y} width={w} height={h} rx="10" className={s} strokeWidth="2"/>{tx(Number(x)+Number(w)/2,Number(y)+26,l,{bold:true,size:10})}</g>)}<path d="M82 45h18M220 27h18M220 99h18" className={s} strokeWidth="1.5"/></svg>,
-    memory: <svg viewBox="0 0 360 140" className={cls} style={{ color: col }}>{[["14","10","74","40","記憶"],["100","10","120","40","指示"],["232","10","108","40","人格"]].map(([x,y,w,h,l])=><g key={l}><rect x={x} y={y} width={w} height={h} rx="10" className={s} strokeWidth="2"/>{tx(Number(x)+Number(w)/2,Number(y)+25,l,{bold:true,size:10})}</g>)}<rect x="60" y="88" width="240" height="40" rx="12" className={s} strokeWidth="2"/>{tx(180,113,"穩定輸出",{bold:true})}<path d="M51 50l38 38M160 50v38M286 50l-38 38" className={s} strokeWidth="1.5"/></svg>,
+    memory: <svg viewBox="0 0 360 140" className={cls} style={{ color: col }}>{[["14","10","74","40","記憶"],["100","10","120","40","指示"],["232","10","108","40","風格"]].map(([x,y,w,h,l])=><g key={l}><rect x={x} y={y} width={w} height={h} rx="10" className={s} strokeWidth="2"/>{tx(Number(x)+Number(w)/2,Number(y)+25,l,{bold:true,size:10})}</g>)}<rect x="60" y="88" width="240" height="40" rx="12" className={s} strokeWidth="2"/>{tx(180,113,"穩定輸出",{bold:true})}<path d="M51 50l38 38M160 50v38M286 50l-38 38" className={s} strokeWidth="1.5"/></svg>,
     project: <svg viewBox="0 0 360 140" className={cls} style={{ color: col }}><rect x="28" y="4" width="304" height="132" rx="16" className={s} strokeWidth="2"/><rect x="46" y="28" width="72" height="88" rx="8" className={s} strokeWidth="2"/><rect x="130" y="28" width="72" height="88" rx="8" className={s} strokeWidth="2"/><rect x="214" y="28" width="100" height="40" rx="8" className={s} strokeWidth="2"/><rect x="214" y="76" width="100" height="40" rx="8" className={s} strokeWidth="2"/>{tx(82,76,"聊天",{bold:true})}{tx(166,76,"檔案",{bold:true})}{tx(264,52,"來源",{bold:true,size:9})}{tx(264,100,"規則",{bold:true,size:9})}</svg>,
     gpt: <svg viewBox="0 0 360 140" className={cls} style={{ color: col }}>{[["16","48","78","42","角色"],["116","4","96","42","知識"],["116","94","96","42","工具"],["234","48","110","42","規則"]].map(([x,y,w,h,l])=><g key={l}><rect x={x} y={y} width={w} height={h} rx="10" className={s} strokeWidth="2"/>{tx(Number(x)+Number(w)/2,Number(y)+26,l,{bold:true,size:10})}</g>)}<path d="M94 69h22M212 25h22M212 115h22" className={s} strokeWidth="1.5"/><path d="M164 46v48" className={s} strokeWidth="1.5"/></svg>,
     canvas: <svg viewBox="0 0 360 140" className={cls} style={{ color: col }}><rect x="20" y="4" width="320" height="132" rx="14" className={s} strokeWidth="2"/><path d="M20 32h320" className={s} strokeWidth="1.5"/><path d="M132 32v104M248 32v104" className={s} strokeWidth="1.2"/>{tx(76,22,"大綱",{bold:true,size:10})}{tx(190,22,"草稿",{bold:true,size:10})}{tx(290,22,"修改",{bold:true,size:10})}</svg>,
@@ -396,7 +396,7 @@ function GuideSectionCard({ section, isExpanded, onToggle }) {
             <div className="space-y-6">
               <p className="text-[14px] leading-[1.8]" style={{ color: C.ink }}>{section.summary}</p>
               <div className="rounded-xl border p-4" style={{ borderColor: C.borderLight, backgroundColor: C.cream }}>
-                <div className="text-[11px] font-semibold uppercase tracking-widest" style={{ color: C.inkMuted }}>為什麼重要</div>
+                <div className="text-[11px] font-semibold uppercase tracking-widest" style={{ color: C.inkMuted }}>為甚麼重要</div>
                 <p className="mt-2 text-[13px] leading-[1.75]" style={{ color: C.ink }}>{section.whyItMatters}</p>
               </div>
               <div>
@@ -465,14 +465,14 @@ export default function ChatGPTMasterGuide() {
             <div>
               <div className="mb-4 inline-flex items-center gap-2 rounded-full border bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-widest" style={{ borderColor: C.borderLight, color: C.greenDeep }}><Ico name="bookOpen" className="h-3.5 w-3.5" /> 實用參考</div>
               <h1 className="ff-display text-3xl font-medium leading-tight tracking-tight md:text-[44px] md:leading-tight" style={{ color: C.ink }}>ChatGPT 完整指南</h1>
-              <p className="mt-4 max-w-lg text-[15px] leading-[1.8]" style={{ color: C.inkLight }}>每個工具是做什麼的、何時該用，以及如何穩定得到更好的結果。先為一般使用者而寫，也為想更深入的人保留進階內容。</p>
+              <p className="mt-4 max-w-lg text-[15px] leading-[1.8]" style={{ color: C.inkLight }}>每個工具是做甚麼的、何時該用，以及如何穩定得到更好的結果。先為一般使用者而寫，也為想更深入的人保留進階內容。</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-[11px] font-medium shadow-sm" style={{ color: C.inkLight }}><Ico name="lightbulb" className="h-3 w-3" style={{ color: C.greenMid }} /> 已驗證 {VERIFIED_DATE}</span>
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-[11px] font-medium shadow-sm" style={{ color: C.inkLight }}><Ico name="layers" className="h-3 w-3" style={{ color: C.greenMid }} /> 16 個章節 &middot; 60+ 提示</span>
               </div>
             </div>
             <div className="rounded-2xl border bg-white p-5 shadow-sm" style={{ borderColor: C.borderLight }}>
-              <div className="mb-3 text-[11px] font-semibold uppercase tracking-widest" style={{ color: C.inkMuted }}>ChatGPT 現在能做什麼</div>
+              <div className="mb-3 text-[11px] font-semibold uppercase tracking-widest" style={{ color: C.inkMuted }}>ChatGPT 現在能做甚麼</div>
               <svg viewBox="0 0 420 190" className="w-full" style={{ color: C.greenDeep }}>
                 {[["16","4","120","38","回答","聊天、搜尋"],["150","4","120","38","整理","專案、記憶"],["284","4","120","38","製作","canvas、圖片"],["16","120","120","38","學習","學習、錄音"],["150","120","120","38","分享","群組、連結"],["284","120","120","38","執行","任務、agent"]].map(([x,y,w,h,l,sub])=><g key={l}><rect x={x} y={y} width={w} height={h} rx="9" className="fill-none stroke-current" strokeWidth="1.6"/><text x={Number(x)+Number(w)/2} y={Number(y)+18} textAnchor="middle" fill={C.greenDeep} style={{fontSize:10,fontWeight:600}}>{l}</text><text x={Number(x)+Number(w)/2} y={Number(y)+30} textAnchor="middle" fill={C.greenDeep} style={{fontSize:7,opacity:0.4}}>{sub}</text></g>)}
                 <text x="210" y="84" textAnchor="middle" fill={C.greenDeep} style={{fontSize:9,fontWeight:600,opacity:0.25}}>完整能力堆疊</text>
@@ -569,7 +569,7 @@ export default function ChatGPTMasterGuide() {
         <section className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border bg-white p-5 shadow-sm" style={{borderColor:C.border}}>
             <div className="text-[11px] font-semibold uppercase tracking-widest" style={{color:C.inkMuted}}>範圍</div>
-            <h3 className="ff-display mt-2 text-[18px] font-medium" style={{color:C.ink}}>本指南涵蓋什麼</h3>
+            <h3 className="ff-display mt-2 text-[18px] font-medium" style={{color:C.ink}}>本指南涵蓋甚麼</h3>
             <div className="mt-4 space-y-2 text-[13px] leading-relaxed" style={{color:C.inkLight}}>
               <div className="rounded-xl px-4 py-2.5" style={{backgroundColor:C.cream}}>以使用者端功能為主，不涵蓋企業管理員功能。</div>
               <div className="rounded-xl px-4 py-2.5" style={{backgroundColor:C.cream}}>重實務應用，不重產品冷知識。</div>
@@ -582,7 +582,7 @@ export default function ChatGPTMasterGuide() {
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white" style={{backgroundColor:C.greenDeep}}><Ico name="sparkles" className="h-5 w-5"/></div>
               <div>
                 <div className="ff-display text-[16px] font-semibold" style={{color:C.greenDeep}}>不要再問「我該怎麼把提示寫得更好？」</div>
-                <p className="mt-2 text-[13px] leading-[1.75] opacity-80" style={{color:C.greenDeep}}>改問：「這件事適合放在哪一層 ChatGPT 裡做？」這個轉變帶來的提升，通常比提示技巧本身更大。</p>
+                <p className="mt-2 text-[13px] leading-[1.75] opacity-80" style={{color:C.greenDeep}}>改問：「這件事適合放在 ChatGPT 的哪一層來做？」這個轉變帶來的提升，通常比提示技巧本身更大。</p>
               </div>
             </div>
           </div>
@@ -593,8 +593,14 @@ export default function ChatGPTMasterGuide() {
           <div className="grid gap-8 lg:grid-cols-2">
             <div>
               <div className="text-[11px] font-semibold uppercase tracking-widest text-emerald-300">最終結論</div>
-              <h2 className="ff-display mt-2 text-2xl font-medium tracking-tight md:text-[28px]">真正熟練是什麼樣子</h2>
+              <h2 className="ff-display mt-2 text-2xl font-medium tracking-tight md:text-[28px]">真正熟練的樣子</h2>
               <p className="mt-4 max-w-xl text-[14px] leading-[1.85] text-emerald-100" style={{opacity:0.8}}>選對模式。清楚定義任務。驗證重要資訊。聰明修訂。把成功做法轉成可重複系統。真正用得好的人，本質上是思路清楚的人，只是剛好會用 AI。</p>
+              <p style={{ fontSize: 13, lineHeight: 1.7 }}>
+              <br />
+              ChatGPT User Guide
+              <br />
+              © 2026 EugeneYip.com All Rights Reserved. 
+              </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
               <div className="text-[13px] font-semibold">持續重新檢查</div>
